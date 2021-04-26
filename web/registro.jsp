@@ -20,7 +20,7 @@
                         <h1>Registro</h1>
         
         
-                        <form action="verificacion" method="post"><br>
+                        <form action="ServletRegistro" method="post"><br>
                             <h1>Llena el formulario y estarás listo para ver el contenido</h1><br>
                             NOMBRE<br>
                             <input type="text" name="txtnombre" size="60"><br><br>
