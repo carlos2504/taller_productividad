@@ -11,14 +11,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import modelo.Consultas;
 
 /**
  *
  * @author Lenovo
  */
-public class verificacion extends HttpServlet {
+public class ServletRegistro extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,10 +36,10 @@ public class verificacion extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet verificacion</title>");            
+            out.println("<title>Servlet ServletRegistro</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet verificacion at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet ServletRegistro at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -73,18 +72,15 @@ public class verificacion extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //processRequest(request, response);
-        PrintWriter out = response.getWriter();
-        
-        String usuario = request.getParameter("txtuser");
-        String password = request.getParameter("txtpassword");
-        
+        String nombre = request.getParameter("txtnombre");
+        String apellido = request.getParameter("txtapellido");
+        String nickname = request.getParameter("txtnickname");
+        String password = request.getParameter("txtcontrasena");
         Consultas con = new Consultas();
-        if(con.Autenticacion(usuario, password)){
-            HttpSession obj = request.getSession(true);
-            obj.setAttribute("usuario", usuario);
-            response.sendRedirect("inicio.jsp");
-        }else{
+        if(con.Registrar(nombre, apellido, nickname, password)){
             response.sendRedirect("index.jsp");
+        }else{
+            response.sendRedirect("registro.jsp");
         }
     }
 
