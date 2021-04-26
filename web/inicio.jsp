@@ -13,7 +13,7 @@
     </head>
     <body>
         
-        <div style="background-color: darkredgit status">
+        <div style="background-color: darkslateblue">
             
             <center>
                 <h1 style="color: snow; font-family: cursive; font-size: 30px">INICIO</h1><br><br>

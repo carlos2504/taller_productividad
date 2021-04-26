@@ -52,6 +52,10 @@
         <servlet-name>ServletPrismasyPiramides</servlet-name>
         <servlet-class>servlets.ServletPrismasyPiramides</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletRegistro</servlet-name>
+        <servlet-class>servlets.ServletRegistro</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>verificacion</servlet-name>
         <url-pattern>/verificacion</url-pattern>
@@ -103,6 +107,10 @@
     <servlet-mapping>
         <servlet-name>ServletPrismasyPiramides</servlet-name>
         <url-pattern>/ServletPrismasyPiramides</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletRegistro</servlet-name>
+        <url-pattern>/ServletRegistro</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
