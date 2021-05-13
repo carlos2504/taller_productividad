@@ -9,19 +9,22 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="Estilos.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&family=Pangolin&display=swap" rel="stylesheet">
         <title>JSP Page</title>
     </head>
     <body>
         
-        <div style="background-color: darkslateblue">
+        <div>
             
             <center>
-                <h1 style="color: snow; font-family: cursive; font-size: 30px">INICIO</h1><br><br>
+                <h1>INICIO</h1><br><br>
                 
-                <h1 style="color: snow; font-family: cursive; font-size: 30px">Materias:</h1><br><br>
+                <h1>Materias:</h1><br><br>
                 
                 
-                <form action="ServletFisica" method="get" style="font-family: cursive; font-size: 30px; color: snow"><br><br>
+                <form action="ServletFisica" method="get"><br><br>
                     
                     Física<br><br>
                     

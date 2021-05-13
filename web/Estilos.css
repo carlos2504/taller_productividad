@@ -1,0 +1,95 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13/05/2021, 07:42:59 AM
+    Author     : Lenovo
+*/
+.enviar{
+    font-size: 25px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    border-style: solid;
+    margin-right: 30px;
+    border-radius: 30px;
+    background: snow;
+    box-shadow: 0px 0px 10px 4px green;
+    transition: all .5s;
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+}
+.enviar:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px 6px green;
+    background: rgba(0, 0, 0, 0.9);
+    transform: translate(0px, -5px);
+}
+.indexFondo{
+    background-image: url('background-5594879_1920.jpg');
+}
+.indexFondo div{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 25px;
+    
+}
+.indexFondo p{
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    color: snow;
+}
+.indexFondo h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 35px;
+    color: snow;
+}
+.indexFondo h2{
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    color: snow;
+}
+.registroFondo{
+    background-image: url('binary-5696716_1920.jpg');
+}
+.registroFondo h1{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 25px;
+}
+.registroFondo h2{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 25px;
+}
+.registroFondo div{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 25px;
+}
+.registroFondo form{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 25px;
+}
+.registroFondo p{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 25px;
+}
+input[type=text]{
+    border: 5px solid navy;
+    background-color: snow;
+    color: indigo;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 30px;
+}
+input[type=password]{
+    border: 5px solid red;
+    background-color: snow;
+    font-family: 'Indie Flower', cursive;
+    color: indigo;
+    border-radius: 30px;
+}
