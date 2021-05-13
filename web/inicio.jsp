@@ -9,39 +9,52 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="Estilos.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&family=Pangolin&display=swap" rel="stylesheet">
+         <%
+            response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+            if (session.getAttribute("usuario") == null) {
+                response.sendRedirect("index.jsp");
+            }
+        %>
         <title>JSP Page</title>
     </head>
-    <body>
+    <body class="inicio">
         
-        <div style="background-color: darkslateblue">
+        <div>
             
             <center>
-                <h1 style="color: snow; font-family: cursive; font-size: 30px">INICIO</h1><br><br>
+                <h1 style="color: snow;font-size: 30px; background-color: purple">INICIO</h1><br><br>
                 
-                <h1 style="color: snow; font-family: cursive; font-size: 30px">Materias:</h1><br><br>
+                <h1 style="color: snow; font-size: 30px; background-color: red">Materias:</h1><br><br>
                 
                 
                 <form action="ServletFisica" method="get" style="font-family: cursive; font-size: 30px; color: snow"><br><br>
                     
-                    Física<br><br>
                     
-                    <input type="submit" value="Ver Contenido" style="font-family: cursive; font-size: 30px; color: blue"><br><br>
+                    
+                    <input type="submit" value="Física" class="botonFisica"><br><br>
                     
                     
                 </form><br><br>
                 
                 <form action="ServletMate" method="get" style="font-family: cursive; font-size: 30px; color: snow"><br><br>
                     
-                    Matemáticas<br><br>
                     
-                    <input type="submit" value="Ver Contenido" style="font-family: cursive; font-size: 30px; color: darkgreen"><br><br>
+                    
+                    <input type="submit" value="Matemáticas" class="botonMate"><br><br>
                     
                     
                 </form>
                 
     </center>
             
+            
         </div>
+        <form action="ServletCerrarSesion">
+                <input type="submit" value="Cerrar sesión" class="salir"><br><br>
+            </form>
        
     </body>
 </html>

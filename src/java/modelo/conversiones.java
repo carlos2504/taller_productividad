@@ -288,7 +288,7 @@ public class conversiones {
         
         float metros = 0;
         
-        metros = (float) (metros * 0.092903);
+        metros = (float) (pulgadas * 0.092903);
         
         return metros;
         

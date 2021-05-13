@@ -9,13 +9,22 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="Estilos.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&family=Pangolin&display=swap" rel="stylesheet">
+         <%
+            response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+            if (session.getAttribute("usuario") == null) {
+                response.sendRedirect("index.jsp");
+            }
+        %>
         <title>JSP Page</title>
     </head>
-    <body>
-        <div style="background-color: darkred">
+    <body class="prismaFondo">
+        <div>
             
-    <center><h1 style="color: snow; font-family: cursive; font-size: 30px">Caída Libre</h1></center>
-    <p style="color: snow; font-family: cursive; font-size: 20px;" align="left">
+    <center><h1 style="font-size: 35px">Caída Libre</h1></center>
+    <p style="font-size: 25px;" align="center">
         Cuando hablamos de caída libre podemos decir que se trata de un movimiento<br>
         en el cúal la unica fuerza que va a afectar al objeto que cae es la gravedad<br>
         Pueden darse 3 casos diferentes con los que podemos trabajar con caída libre.<br>
@@ -28,7 +37,7 @@
         <strong>Recordemos que el valor de la gravedad en la tierra es 9.8 m/s2</strong><br><br>
         <img src="caida.png" width="230" height="293" alt="caida"/>
     </p><br>
-    <p style="color: snow; font-family: cursive; font-size: 20px" align="right">
+    <p style="font-size: 25px" align="right">
         
         Ahora imagina que estas en el segundo piso y tienes la misma pelota<br>
         en este caso no la dejarás caer solamente, sino que vas a arrojar la pelota hacia abajo con fuerza<br>
@@ -36,7 +45,7 @@
         el comportamiento de la caida va a ser el mismo que en el anterior caso solo con la diferencia de velocidad inicial<br><br>
         <img src="caida1.jpg" width="200" height="252" alt="caida1"/>
     </p>
-    <p style="color: snow; font-family: cursive; font-size: 20px" align="center">
+    <p style="font-size: 25px" align="center">
         Para el último caso imagina que tienes la pelota y la arrojas hacía arriba<br>
         ¿Qué pasa? este caso será un poco diferente a los otros dos<br>
         para este caso también habrá una velocidad inicial<br>
@@ -48,13 +57,15 @@
         <img src="tiro-vertical-caida-libre.jpg" width="400" height="214" alt="tiro-vertical-caida-libre"/>
     </p>
     
-    <p style="color: snow; font-family: cursive; font-size: 20px">
-        
-        Las fórmulas que vamos a estar utilizando en caída libre son<br><br>
-        las ecuaciones de posición y velocidad y estas son:
- 
-    </p>
-    <table style="font-family: cursive; font-size: 20px; color: snow " width="50%" border="1" align="center">
+    
+        <center>
+            <p style="font-size: 25px; color: snow">
+                Las fórmulas que vamos a estar utilizando en caída libre son<br><br>
+            las ecuaciones de posición y velocidad y estas son:
+            </p>
+        </center>
+    
+    <table style="font-size: 25px;">
         
         <tbody>
             
@@ -79,10 +90,10 @@
         </tbody>
         
     </table><br>
-    <strong style="color: snow; font-family: cursive; font-size: 20px">Nota: recuerda que la gravedad siempre va a atraer los cuerpos hacia abajo por eso en las fórmulas se encuentra como valor negativo</strong>
-    <h1 style="font-family: cursive; font-size: 20px; color: snow" align="center">Donde:</h1><br>
+    <h2 style="font-size: 25px">Nota: recuerda que la gravedad siempre va a atraer los cuerpos hacia abajo por eso en las fórmulas se encuentra como valor negativo</h2>
+    <h1 style="font-size: 25px; " align="center">Donde:</h1><br>
     
-    <table style="font-family: cursive; font-size: 20px; color: snow " width="50%" border="1" align="center">
+    <table style=" font-size: 25px;" >
         
         <tr>
             <td>Variable</td>
@@ -115,5 +126,9 @@
         </tr>
     </table><br>
         </div>
+        <form action="ServletCerrarSesion" align="right">
+            <input type="submit" value="Cerrar Sesión" name="Salir" size="110" class="salir" style="font-family: cursive; font-size: 30px">
+        </form>
+        <a href="fisica.jsp" class="regresar">Módulo de Física</a>
     </body>
 </html>

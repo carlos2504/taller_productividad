@@ -9,26 +9,29 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="Estilos.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&family=Pangolin&display=swap" rel="stylesheet">
         <title>JSP Page</title>
     </head>
-    <body>
-        <div style="background-color: darkorange">
+    <body class="fondo">
+        <div>
             
-            <h1 style="color: snow; font-family: cursive; font-size: 35px">
+            <h1 style="color: snow; font-size: 35px">
                     <center>
         
-                        <h1>Cálculos</h1>
+                        <h1>PhysiMath</h1>
         
         
                         <form action="verificacion" method="post"><br>
                     
                             NICKNAME<br>
-                            <input type="text" name="txtuser" size="80"><br><br>
+                            <input type="text" name="txtuser" size="80" required="" placeholder="Usuario"><br><br>
                             PASSWORD<br>
-                            <input type="text" name="txtpassword" size="80"><br><br>
+                            <input type="text" name="txtpassword" size="80" required="" placeholder="Password"><br><br>
             
-                            <input type="submit" value="Entrar" name="entrar" size="110" style="color: snow; font-family: cursive; font-size: 50px; background-color: green"><br><br>
-                    No estas registrado aún? <a href="registro.jsp" style="font-family: cursive; font-size: 35px">Registrarme</a>
+                            <input type="submit" value="Entrar" name="entrar" size="110" style="background-color: green" class="enviar"><br><br>
+                            No estas registrado aún? <a href="registro.jsp" style="font-family: cursive; font-size: 35px" class="">Registrarme</a>
             
         </form>
         
