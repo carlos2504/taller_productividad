@@ -242,7 +242,7 @@ public class conversiones {
         
         float kilos = 0;
         
-        kilos = (float) (kilos * 0.0283495);
+        kilos = (float) (onzas * 0.0283495);
         
         return kilos;
         

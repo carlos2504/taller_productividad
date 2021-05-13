@@ -206,5 +206,9 @@
             </center><br><br>
             
         </div>
+        <form action="ServletCerrarSesion" align="right">
+            <input type="submit" value="Cerrar Sesión" name="Salir" size="110" class="salir" style="font-family: cursive; font-size: 30px">
+        </form>
+        <a href="matematicas.jsp" class="regresar">Módulo de Matemáticas</a>
     </body>
 </html>
