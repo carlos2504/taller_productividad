@@ -4,9 +4,86 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 13/05/2021, 07:42:59 AM
+    Created on : 29/04/2021, 12:30:09 PM
     Author     : Lenovo
 */
+.fondo{
+    background-image: url('background-5594879_1920.jpg');
+}
+.fondo div{
+    font-family: 'Indie Flower', cursive;
+}
+.fondo h1{
+    font-family: 'Indie Flower', cursive;
+}
+.fondo form{
+    font-family: 'Indie Flower', cursive;
+}
+.prismaFondo{
+    background-image: url('board-114656_1920.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.prismaFondo h1{
+    font-family: 'Indie Flower', cursive;
+}
+.prismaFondo h2{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+}
+.prismaFondo div{
+    font-family: 'Indie Flower', cursive;
+}
+.prismaFondo p{
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    color: snow;
+}
+.prismaFondo select{
+    font-family: 'Indie Flower', cursive;
+}
+.prismaFondo img{
+
+    border-radius: 10px;
+}
+.prismaFondo table{
+    font-family: 'Indie Flower', cursive;
+}
+input[type=text]{
+    border: 5px solid blue;
+    background-color: snow;
+    color: orangered;
+    border-radius: 30px;
+    font-family: cursive;
+    font-size: 40px;
+    width: 50%;
+}
+input[type=password]{
+    border: 5px solid darkmagenta;
+    background-color: inactiveborder;
+    color: green;
+    border-radius: 30px;
+    font-family: cursive;
+    font-size: 40px;
+    width: 50%;
+
+}
+h1{
+    font-family: cursive;
+    color: snow;
+    font-size: 50px;
+
+
+}
+body{
+    width: 100%;
+
+}
+.inicio{
+    background-image: url('skull-and-crossbones-1739995_1280.jpg');
+
+}
+
 .enviar{
     font-size: 30px;
     list-style: none;
@@ -19,7 +96,8 @@ and open the template in the editor.
     box-shadow: 0px 0px 10px 4px green;
     transition: all .5s;
     text-decoration: none;
-    font-family: 'Indie Flower', cursive;
+    font-family: cursive;
+    color: black;
 }
 .enviar:hover{
     transition: all .5s;
@@ -27,7 +105,7 @@ and open the template in the editor.
     background: green;
     transform: translate(0px, -5px);
 }
-.inicio{
+.registrar{
     font-size: 30px;
     list-style: none;
     display: inline-block;
@@ -35,189 +113,79 @@ and open the template in the editor.
     border-style: solid;
     margin-right: 30px;
     border-radius: 30px;
-    background: steelblue;
-    box-shadow: 0px 0px 10px 4px steelblue;
+    background: snow;
+    box-shadow: 0px 0px 10px 4px orangered;
     transition: all .5s;
     text-decoration: none;
-    font-family: 'Indie Flower', cursive;
-}
-.inicio:hover{
-    transition: all .5s;
-    box-shadow: 0px 0px 10px 6px green;
-    background: green;
-    transform: translate(0px, -5px);
-}
-.inicioFondo{
-    background-image: url('skull-and-crossbones-1739995_1280.jpg');
-}
-.inicioFondo div{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 25px;
-}
-.inicioFondo h1{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 30px;
-}
-.inicioFondo h2{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 25px;
-}
-.inicioFondo p{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 25px;
-}
-.btnFisica{
-    font-size: 35px;
-    list-style: none;
-    display: inline-block;
-    padding: 10px;
-    border-style: solid;
-    margin-right: 30px;
-    border-radius: 30px;
-    background: steelblue;
-    box-shadow: 0px 0px 10px 4px green;
-    transition: all .5s;
-    text-decoration: none;
+    font-family: cursive;
     color: black;
-    font-family: 'Indie Flower', cursive;
 }
-.btnFisica:hover{
+.registrar:hover{
     transition: all .5s;
-    box-shadow: 0px 0px 10px 6px green;
+    box-shadow: 0px 0px 10px 6px orangered;
     background: green;
     transform: translate(0px, -5px);
 }
-.fisica{
-    background-image: url('physicist-4276720_1920.jpg');
-}
-.fisica h1{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 30px;
-}
-.fisica h2{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
+.botonFisica{
     font-size: 25px;
-}
-.fisica div{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 25px;
-}
-.fisica p{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 25px;
-}
-.fisica form{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 30px;
-}
-.btnMate{
-    font-size: 35px;
     list-style: none;
     display: inline-block;
     padding: 10px;
     border-style: solid;
     margin-right: 30px;
     border-radius: 30px;
-    background: orange;
-    box-shadow: 0px 0px 10px 4px green;
+    background: snow;
+    box-shadow: 0px 0px 10px 4px blue;
     transition: all .5s;
     text-decoration: none;
+    font-family: cursive;
     color: black;
-    font-family: 'Indie Flower', cursive;
 }
-.btnMate:hover{
+.botonFisica:hover{
     transition: all .5s;
-    box-shadow: 0px 0px 10px 6px green;
+    box-shadow: 0px 0px 10px 6px blue;
     background: green;
     transform: translate(0px, -5px);
 }
-.btnLeyes{
-    font-size: 35px;
+.botonMate{
+    font-size: 25px;
     list-style: none;
     display: inline-block;
     padding: 10px;
     border-style: solid;
     margin-right: 30px;
     border-radius: 30px;
-    background: purple;
+    background: snow;
     box-shadow: 0px 0px 10px 4px purple;
     transition: all .5s;
     text-decoration: none;
+    font-family: cursive;
     color: black;
-    font-family: 'Indie Flower', cursive; 
 }
-.btnLeyes:hover{
+.botonMate:hover{
     transition: all .5s;
-    box-shadow: 0px 0px 10px 6px green;
-    background: green;
-    transform: translate(0px, -5px);
-}
-.btnmfp{
-    font-size: 35px;
-    list-style: none;
-    display: inline-block;
-    padding: 10px;
-    border-style: solid;
-    margin-right: 30px;
-    border-radius: 30px;
-    background: red;
-    box-shadow: 0px 0px 10px 4px red;
-    transition: all .5s;
-    text-decoration: none;
-    color: black;
-    font-family: 'Indie Flower', cursive; 
-}
-.btnmfp:hover{
-    transition: all .5s;
-    box-shadow: 0px 0px 10px 6px green;
-    background: green;
-    transform: translate(0px, -5px);
-}
-.btnCaida{
-    font-size: 35px;
-    list-style: none;
-    display: inline-block;
-    padding: 10px;
-    border-style: solid;
-    margin-right: 30px;
-    border-radius: 30px;
-    background: forestgreen;
-    box-shadow: 0px 0px 10px 4px forestgreen;
-    transition: all .5s;
-    text-decoration: none;
-    color:black;
-    font-family: 'Indie Flower', cursive; 
-}
-.btnCaida:hover{
-    transition: all .5s;
-    box-shadow: 0px 0px 10px 6px green;
+    box-shadow: 0px 0px 10px 6px purple;
     background: green;
     transform: translate(0px, -5px);
 }
 .salir{
-    font-size: 35px;
+    font-size: 25px;
     list-style: none;
     display: inline-block;
     padding: 10px;
     border-style: solid;
     margin-right: 30px;
     border-radius: 30px;
-    background: red;
+    background: snow;
     box-shadow: 0px 0px 10px 4px red;
     transition: all .5s;
     text-decoration: none;
+    font-family: cursive;
     color: black;
-    font-family: 'Indie Flower', cursive;
+    position: absolute;
+    left: 80%;
     
+
 }
 .salir:hover{
     transition: all .5s;
@@ -225,115 +193,518 @@ and open the template in the editor.
     background: red;
     transform: translate(0px, -5px);
 }
-.indexFondo{
-    background-image: url('background-5594879_1920.jpg');
-}
-.indexFondo div{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 25px;
-
-}
-.indexFondo p{
-    font-family: 'Indie Flower', cursive;
-    font-size: 25px;
-    color: snow;
-}
-.indexFondo h1{
-    font-family: 'Indie Flower', cursive;
-    font-size: 30px;
-    color: snow;
-}
-.indexFondo h2{
-    font-family: 'Indie Flower', cursive;
-    font-size: 25px;
-    color: snow;
-}
-.registroFondo{
+.registrarse{
     background-image: url('binary-5696716_1920.jpg');
 }
-.registroFondo h1{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 30px;
+.fisica{
+    background-image: url('physicist-4276720_1920.jpg');
+    border-radius: 10px;
 }
-.registroFondo h2{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 25px;
+.registrarse div{
+    font-family: 'Indie Flower', cursive; 
 }
-.registroFondo div{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 25px;
+.registrarse h1{
+    font-family: 'Indie Flower', cursive; 
 }
-.registroFondo form{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 25px;
+.registrarse form{
+    font-family: 'Indie Flower', cursive; 
 }
-.registroFondo p{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 25px;
+.fisica h1{
+    font-family: 'Indie Flower', cursive; 
 }
-input[type=text]{
-    border: 5px solid navy;
+.fisica h2{
+    font-family: 'Indie Flower', cursive; 
+}
+.fisica div{
+    font-family: 'Indie Flower', cursive; 
+    display: table;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-20%, -40%);
+}
+.fisica a{
+    font-family: 'Indie Flower', cursive; 
+    width: 60%;
+    height: 50%
+}
+.fisica form{
+    text-align: center;
+}
+
+.caida{
+    border: 2px;
+    padding: 30px;
+    font-size: 20px;
+    color: snow;
+    text-align: center;
+    float: left;
+    background-color: purple;
+    font-family: cursive;
+    text-decoration: none;
+    width: 20%;
+    padding: 15px 15px;
+    border-radius: 10px;
+    letter-spacing: 5px;
+}
+.caida:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px green, 0 0 40px green, 0 0 80px green;
+    background: green;
+    transform: translate(0px, -5px);
+}
+.caida2{
+    border: 2px;
+    padding: 30px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    float: left;
     background-color: snow;
-    color: indigo;
-    font-family: 'Indie Flower', cursive;
-    border-radius: 30px;
+    font-family: cursive;
+    text-decoration: none;
+    width: 20%;
+    padding: 15px 15px;
+    border-radius: 10px;
+    letter-spacing: 5px;
 }
-input[type=password]{
-    border: 5px solid red;
-    background-color: snow;
-    font-family: 'Indie Flower', cursive;
-    color: indigo;
-    border-radius: 30px;
+.caida2:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px green, 0 0 40px green, 0 0 80px green;
+    background: green;
+    transform: translate(0px, -5px);
 }
-.contenedor{
-    border: solid 1px black;
-    margin: 10px;
+.conv{
+    border: 2px;
+    padding: 30px;
+    font-size: 20px;
+    color: snow;
+    text-align: center;
+    float: left;
+    background-color: blue;
+    font-family: cursive;
+    text-decoration: none;
+    width: 20%;
+    padding: 15px 15px;
+    border-radius: 10px;
+    letter-spacing: 2px;
 }
-.cajas{
-    border: solid 1px black;
-    margin: 15px;
-    display: inline-block;
-    flex-wrap: wrap;
+.conv:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px green, 0 0 40px green, 0 0 80px green;
+    background: green;
+    transform: translate(0px, -5px);
 }
-.caja{
+.prismas{
+    border: 2px;
+    padding: 30px;
+    font-size: 20px;
+    color: snow;
+    text-align: center;
+    float: left;
+    background-color: black;
+    font-family: cursive;
+    text-decoration: none;
+    width: 20%;
+    padding: 15px 15px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+.prismas:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px green, 0 0 40px green, 0 0 80px green;
+    background: green;
+    transform: translate(0px, -5px);
+}
+.mfp{
+    border: 2px;
+    padding: 30px;
+    font-size: 20px;
+    color: snow;
+    text-align: center;
+    float: left;
+    background-color: goldenrod;
+    font-family: cursive;
+    text-decoration: none;
+    width: 20%;
+    padding: 15px 15px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.mfp:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px green, 0 0 40px green, 0 0 80px green;
+    background: green;
+    transform: translate(0px, -5px);
+}
+.mfp2{
+    border: 2px;
+    padding: 30px;
+    font-size: 20px;
+    color: snow;
+    text-align: center;
+    float: left;
+    background-color: darksalmon;
+    font-family: cursive;
+    text-decoration: none;
+    width: 20%;
+    padding: 15px 15px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.mfp2:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px green, 0 0 40px green, 0 0 80px green;
+    background: green;
+    transform: translate(0px, -5px);
+}
+.convUn{
+    border: 2px;
+    padding: 30px;
+    font-size: 20px;
+    color: snow;
+    text-align: center;
+    float: left;
+    background-color: limegreen;
+    font-family: cursive;
+    text-decoration: none;
+    width: 20%;
+    padding: 15px 15px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.convUn:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px green, 0 0 40px green, 0 0 80px green;
+    background: green;
+    transform: translate(0px, -5px);
+}
+.conv2{
+    border: 2px;
+    padding: 30px;
+    font-size: 20px;
+    color: snow;
+    text-align: center;
+    float: left;
     background-color: red;
-    margin: calc(25% - 50px);
-    height: 100px;
-    width: 100px;
-    font-family: 'Indie Flower', cursive;;
-    font-size: 30px;
+    font-family: cursive;
+    text-decoration: none;
+    width: 20%;
+    padding: 15px 15px;
+    border-radius: 10px;
+    letter-spacing: 1px;
 }
+.conv2:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px green, 0 0 40px green, 0 0 80px green;
+    background: green;
+    transform: translate(0px, -5px);
+}
+.leyes{
+    border: 2px;
+    padding: 30px;
+    font-size: 20px;
+    color: snow;
+    text-align: center;
+    float: left;
+    background-color: chocolate;
+    font-family: cursive;
+    text-decoration: none;
+    width: 20%;
+    padding: 15px 15px;
+    border-radius: 10px;
+    letter-spacing: 5px;
+}
+.leyes:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px green, 0 0 40px green, 0 0 80px green;
+    background: green;
+    transform: translate(0px, -5px);
+}
+.regresar{
+    font-size: 25px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    border-style: solid;
+    margin-left: 30px;
+    border-radius: 30px;
+    background: snow;
+    box-shadow: 0px 0px 10px 4px blue;
+    transition: all .5s;
+    text-decoration: none;
+    font-family: cursive;
+    color: black;
+    position: absolute;
+
+
+}
+.regresar:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px green, 0 0 40px green, 0 0 80px green;
+    background: green;
+    transform: translate(0px, -5px);
+}
+.cuerpo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
 .matematicas{
     background-image: url('banner-1183445_1280.jpg');
+
 }
 .matematicas div{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 25px;
+    font-family: 'Indie Flower', cursive; 
+    display: table;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-20%, -40%);
 }
 .matematicas h1{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
+    font-family: 'Indie Flower', cursive; 
+}
+.matematicas a{
+    font-family: 'Indie Flower', cursive; 
+    width: 60%;
+    height: 50%
+}
+.conversion{
     font-size: 30px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    border-style: solid;
+    margin-right: 30px;
+    border-radius: 30px;
+    background: indigo;
+    box-shadow: 0px 0px 10px 4px green;
+    transition: all .5s;
+    text-decoration: none;
+    font-family: cursive;
+    color: #fff;
+    letter-spacing: 4px;
+    transition: 0.2s;
 }
-.matematicas h2{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 25px;
+.conversion:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px dodgerblue, 0 0 40px dodgerblue, 0 0 80px dodgerblue;
+    background: dodgerblue;
+    transform: translate(0px, -5px);
 }
-.matematicas p{
-    font-family: 'Indie Flower', cursive;
-    color: snow;
-    font-size: 25px;
+.conversion2{
+    font-size: 30px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    border-style: solid;
+    margin-right: 30px;
+    border-radius: 30px;
+    background: red;
+    box-shadow: 0px 0px 10px 4px green;
+    transition: all .5s;
+    text-decoration: none;
+    font-family: cursive;
+    color: #fff;
+    letter-spacing: 4px;
+    transition: 0.2s;
 }
-.matematicas form{
-    font-family: 'Indie Flower', cursive;
+.conversion2:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px green, 0 0 40px green, 0 0 80px green;
+    background: green;
+    transform: translate(0px, -5px);
+}
+.cl{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+
+}
+.cu{
+    background: rgb(197,10,7);
+    background: radial-gradient(circle, rgba(197,10,7,1) 1%, rgba(228,74,23,1) 100%);
+
+}
+.boton{
+    border: 2px;
+    padding: 25px;
+    font-size: 20px;
     color: snow;
+    text-align: center;
+    font-family: cursive;
+    text-decoration: none;
+    width: 20%;
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin: auto;
+}
+.boton:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px green, 0 0 40px green, 0 0 80px green;
+    background: green;
+    transform: translate(0px, -5px);
+}
+.tcaida{
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #000 url('background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(211,34,43,1) 0%, rgba(248,159,124,1) 90% );');
+    color: indigo;
+    font-family: 'Indie Flower', cursive;
     font-size: 25px;
+    margin: auto;
+}
+.tcaida td{
+    background: navy;
+    color: snow;
+}
+.tconversiones{
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #000 url('background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(211,34,43,1) 0%, rgba(248,159,124,1) 90% );');
+    color: indigo;
+    font-family: cursive;
+    font-size: 25px;
+    margin: auto;
+}
+.tconversiones td{
+    background: forestgreen;
+    color: snow;
+}
+.tconv2{
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #000 url('background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(211,34,43,1) 0%, rgba(248,159,124,1) 90% );');
+    color: indigo;
+    font-family: cursive;
+    font-size: 25px;
+    margin: auto; 
+}
+.tconv2 td{
+    background: purple;
+    color: snow;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #000 url('background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(211,34,43,1) 0%, rgba(248,159,124,1) 90% );');
+    color: indigo;
+    font-family: cursive;
+    font-size: 25px;
+    margin: auto; 
+}
+table{
+    background: navy;
+    color: snow;
+}
+.tleyes{
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #000 url('background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(211,34,43,1) 0%, rgba(248,159,124,1) 90% );');
+    color: indigo;
+    font-family: cursive;
+    font-size: 25px;
+    margin: auto;
+}
+.tleyes td{
+    background: red;
+    color: snow;
+}
+.c2{
+    background: rgb(183,187,7);
+    background: radial-gradient(circle, rgba(183,187,7,1) 2%, rgba(3,61,126,1) 78%);
+}
+select{
+    width: 70%;
+    height: 50px;
+    font-size: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0;
+    background-color: red;
+    border: none;
+    border-bottom: 2px solid #962d22;
+    color: white;
+    padding: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+}
+.calcconv{
+    background: rgb(14,33,240);
+    background: radial-gradient(circle, rgba(14,33,240,1) 1%, rgba(15,136,55,1) 100%);
+}
+.fraccionesfondo{
+    background-image: url('board-114656_1920.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.fraccionesfondo p{
+    font-family: 'Indie Flower', cursive;
+}
+.fraccionesfondo h1{
+    font-family: 'Indie Flower', cursive;
+}
+.fraccionesfondo img{
+    border: 5px solid red;
+    border-radius: 5px;
+    margin: 20px;
+}
+.fondocalcfracciones{
+    background-image: url('board-114656_1920.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.fondocalcfracciones p{
+    font-family: 'Indie Flower', cursive;
+}
+.fondocalcfracciones h1{
+    font-family: 'Indie Flower', cursive;
+}
+.fondocalcfracciones select{
+    font-family: 'Indie Flower', cursive;
+}
+.PyA{
+    background-image: url('board-114656_1920.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.PyA h1{
+    font-family: 'Indie Flower', cursive;
+
+}
+.PyA select{
+    font-family: 'Indie Flower', cursive; 
+}
+.PyA form{
+    font-family: 'Indie Flower', cursive;
+}
+.cl p{
+    font-family: 'Indie Flower', cursive;
+}
+.cl div{
+    font-family: 'Indie Flower', cursive;
+}
+.cl h1{
+    font-family: 'Indie Flower', cursive;
+}
+.perimetroFondo{
+    background-image: url('board-114656_1920.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Indie Flower', cursive;
+}
+.perimetroFondo div{
+    font-family: 'Indie Flower', cursive;
+}
+.perimetroFondo p{
+    font-family: 'Indie Flower', cursive;
+}
+.perimetroFondo h1{
+    font-family: 'Indie Flower', cursive;
 }

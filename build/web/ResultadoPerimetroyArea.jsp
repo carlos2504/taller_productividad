@@ -20,16 +20,17 @@
         %>
         <title>JSP Page</title>
     </head>
-    <body>
-        <div style="background-color: crimson">
+    <body class="prismaFondo">
+        <div>
             <center>
-                <h1 style="font-family: cursive; font-size: 30px; color: snow">Resultado</h1>
-                <h1 style="font-family: cursive; font-size: 30px; color: snow"><%
+                <h1 style=" font-size: 50px; ">Resultado</h1>
+                <h1 style="font-size: 50px; "><%
                     float resultado = (float)request.getAttribute("ResultadoCirculo");
                     String unidades = (String)request.getAttribute("unidades");
                     out.println(resultado + " " + unidades);
                     
                     %></h1>
+                    <a href="CalculosCaida.jsp" class="boton" style="background-color: aqua">VOLVER</a>
             </center>
         </div>
     </body>

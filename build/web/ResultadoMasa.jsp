@@ -20,16 +20,17 @@
         %>
         <title>JSP Page</title>
     </head>
-    <body>
+    <body class="prismaFondo">
     <center>
         
-        <h1 style="font-family: cursive; color: green; font-size: 40px">Resultado</h1>
+        <h1 style="font-size: 40px">Resultado</h1>
         
-        <h1 style="font-family: cursive; color: green; font-size: 50px"><%
+        <h1 style="font-size: 50px"><%
         float masa = (float)request.getAttribute("fuerzaFinal");
         out.println("La masa es igual a " + masa + " Kg");
         
         %></h1>
+        <a href="Calculomfp.jsp" class="boton" style="background-color: aqua">VOLVER</a>
         
     </center>
         

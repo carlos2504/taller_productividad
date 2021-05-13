@@ -13,17 +13,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&family=Pangolin&display=swap" rel="stylesheet">
         <%
-        response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-        if(session.getAttribute("usuario") == null){
-            response.sendRedirect("index.jsp");
-        }
+            response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+            if (session.getAttribute("usuario") == null) {
+                response.sendRedirect("index.jsp");
+            }
         %>
         <title>JSP Page</title>
     </head>
-    <body>
-        <div style="background-color: firebrick; font-family: cursive; color: snow; font-size: 20px">
+    <body class="prismaFondo">
+        <div>
             <center><h1>Conversión de Unidades</h1></center>
-            <p align="left">
+            <p align="center">
                 Exiten gran variedad de unidades que nos sirven para<br>
                 medir las magnitudes físicas, esto se debe a principalmente<br>
                 a que en diferentes partes del mundo se usaban medidas propias<br>
@@ -31,7 +31,7 @@
                 sea correcto o incorrecto, solo son distintos aunque ahora en gran<br>
                 parte del mundo se utiliza ya el sistema internacional de unidades(SI).
             </p><br><br>
-            <p align="center">
+            <p align="right">
                 Muchas veces podemos encontrarnos con las medidas que nos den<br>
                 en otro sistema de unidades diferentes al sistema internacional<br>
                 para poder trabajar con estas medidas será necesario convertir<br>
@@ -39,17 +39,17 @@
                 manera tendremos todas las unidades en el mismo sistema y podremos<br>
                 proceder a realizar los cálculos que necesitamos.
             </p><br><br>
-            
+
             <p align="center">
                 A continuación se encuentran diferentes tipos de unidades<br>
                 y su equivalencia en otras unidades,<br>
                 Empezaremos con las unidades de longitud.
-                
-                
+
+
             </p><br><br>
-            <h1>Unidades de Longitud</h1>
-            <table style="font-family: cursive; font-size: 20px " width="50%" border="1" align="center">
-                
+            <h1 align="center">Unidades de Longitud</h1>
+            <table style="font-size: 20px " align="center">
+
                 <tbody>
                     <tr style="color: ghostwhite">
                         <td>Medida</td>
@@ -96,36 +96,14 @@
                         <td align="center"> 0.9144 Metros(m)</td>
                     </tr>
                 </tbody>
-                
+
             </table>
-            
-                <form action="ConversionCalculo" method="get" style="font-family: cursive; font-size: 25px ">
-                <h1>Puedes utilizar el formulario para convertir unidades</h1><br><br>
-                <center>
-                    Valor en unidades base<br><br>
-                <input type="text" name="unidadesbase" size="50"><br><br>
-                </center>
-                <h1>Selecciona la conversión que quieres hacer</h1><br><br>
-                <select name="conversion" size="1" style="font-family: cursive; font-size: 30px; color: slateblue">
-                    
-                    <option value="macm">Metros a Centímetros</option>
-                    <option value="mamm">Metros a Milímetros</option>
-                    <option value="mapulg">Metros a Pulgadas</option>
-                    <option value="mapies">Metros a Pies</option>
-                    <option value="mamillas">Metros a Millas</option>
-                    <option value="mayard">Metros a Yardas</option>
-                    <option value="pulgam">Pulgadas a metros</option>
-                    <option value="pieam">Pies a Metros</option>
-                    <option value="millasam">Millas a Metros</option>
-                    <option value="yardam">Yardas a Metros</option>
-                </select><br><br>
-                <input type="submit" value="Convertir" style="font-family: cursive; font-size: 30px; color: snow; background-color: slateblue">
-                
-            </form>
-            
-            <h1>Unidades de Tiempo</h1>
-          <table style="font-family: cursive; font-size: 20px " width="50%" border="1" align="center">
-                
+
+
+
+            <h1 align="center">Unidades de Tiempo</h1>
+            <table style="font-size: 20px ">
+
                 <tbody>
                     <tr style="color: ghostwhite">
                         <td>Medida</td>
@@ -163,39 +141,19 @@
                         <td align="center"> 1 Hora(h)</td>
                         <td align="center"> 0.0416667 Días(d)</td>
                     </tr>
-                       
-                    
+
+
                 </tbody>
-                
+
             </table>
-            
-                
-                <form action="ConversionCalculo" method="get" style="font-family: cursive; font-size: 25px ">
-                <h1>Puedes utilizar el formulario para convertir unidades</h1><br><br>
-                <center>
-                    Valor en unidades base<br><br>
-                <input type="text" name="unidadesbase" size="50"><br><br>
-                </center>
-                <h1>Selecciona la conversión que quieres hacer</h1><br><br>
-                <select name="conversion" size="1" style="font-family: cursive; font-size: 30px; color: darkolivegreen">
-                    
-                    <option value="samin">Segundos a Minutos</option>
-                    <option value="sah">Segundos a Horas</option>
-                    <option value="minas">Minutos a Segundos</option>
-                    <option value="minah">Minutos a Horas</option>
-                    <option value="minad">Minutos a Días</option>
-                    <option value="has">Horas a Segundos</option>
-                    <option value="hamin">Horas a Minutos</option>
-                    <option value="had">Horas a Días</option>
-                </select><br><br>
-                <input type="submit" value="Convertir" style="font-family: cursive; font-size: 30px; color: snow; background-color: darkgreen">
-                
-            </form>
-                
-            
-            <h1>Unidades de Masa</h1>
-            <table style="font-family: cursive; font-size: 20px " width="50%" border="1" align="center">
-                
+
+
+
+
+
+            <h1 align="center">Unidades de Masa</h1>
+            <table style="font-size: 20px " >
+
                 <tbody>
                     <tr style="color: ghostwhite">
                         <td>Medida</td>
@@ -242,33 +200,16 @@
                         <td align="center"> 0.9144 Metros(m)</td>
                     </tr>
                 </tbody>
-                
+
             </table>
-            
-                
-                <form action="ConversionCalculo" method="get" style="font-family: cursive; font-size: 25px ">
-                <h1>Puedes utilizar el formulario para convertir unidades</h1><br><br>
-                <center>
-                    Valor en unidades base<br><br>
-                <input type="text" name="unidadesbase" size="50"><br><br>
-                </center>
-                <h1>Selecciona la conversión que quieres hacer</h1><br><br>
-                <select name="conversion" size="1" style="font-family: cursive; font-size: 30px; color: darkslategray">
-                    <option value="kgaoz">Kilogramos a Onzas</option>
-                    <option value="kgalb">Kilogramos a Libras</option>
-                    <option value="lbakg">Libras a Kilogramos</option>
-                    <option value="lbaoz">Libras a Onzas</option>
-                    <option value="ozakg">Onzas a Kilogramos</option>
-                    <option value="ozalb">Onzas a Libras</option>
-                </select><br><br>
-                <input type="submit" value="Convertir" style="font-family: cursive; font-size: 30px; color: snow; background-color: darkslategray">
-                
-            </form>
-                
-            
-            <h1>Unidades de Área</h1>
-            <table style="font-family: cursive; font-size: 20px " width="50%" border="1" align="center">
-                
+
+
+
+
+
+            <h1 align="center">Unidades de Área</h1>
+            <table style="font-size: 20px ">
+
                 <tbody>
                     <tr style="color: ghostwhite">
                         <td>Medida</td>
@@ -299,34 +240,21 @@
                         <td align="center">0.00694444 Pies Cuadrados(ft²)</td>
                     </tr>
                 </tbody>
-                
+
             </table>
-            
-                
-                <form action="ConversionCalculo" method="get" style="font-family: cursive; font-size: 25px ">
-                <h1>Puedes utilizar el formulario para convertir unidades</h1><br><br>
-                <center>
-                 Valor en unidades base<br><br>
-                <input type="text" name="unidadesbase" size="50"><br><br>
-                </center>
-                <h1>Selecciona la conversión que quieres hacer</h1><br><br>
-                <select name="conversion" size="1" style="font-family: cursive; font-size: 30px; color: orange">
-                    <option value="m2aft2">Metros Cuadrados a Pies Cuadrados</option>
-                    <option value="m2ain2">Metros Cuadrados a Pulgadas Cuadradas</option>
-                    <option value="ft2ain2">Pies Cuadrados a Pulgadas Cuadradas</option>
-                    <option value="ft2am2">Pies Cuadrados a Metros Cuadrados</option>
-                    <option value="in2am2">Pulgadas Cuadradas a Metros Cuadrados</option>
-                    <option value="in2aft2">Pulgadas Cuadradas a Pies Cuadrados</option>
-                </select><br><br>
-                <input type="submit" value="Convertir" style="font-family: cursive; font-size: 30px; color: snow; background-color: orange">
-                
-                </form><br><br>
-                Ver las siguientes conversiones <a href="ConversionUnidades2.jsp" style="font-family: cursive; font-size: 35px">Siguiente</a>
-                
-            
-            
+
+
+
+            <h2 align="ce">Ver las siguientes conversiones <a href="ConversionUnidades2.jsp" style="font-family: cursive; font-size: 35px">Siguiente</a></h2>
+
+
+
         </div>
-        
-   
+        <form action="ServletCerrarSesion">
+            <input type="submit" value="Cerrar Sesión" name="Salir" size="110" class="salir" style="font-size: 30px">
+        </form>
+        <a href="fisica.jsp" class="regresar">Módulo de Física</a>
+
+
     </body>
 </html>

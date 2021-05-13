@@ -20,15 +20,16 @@
         %>
         <title>JSP Page</title>
     </head>
-    <body>
-        <div style="background-color: honeydew">
+    <body class="prismaFondo">
+        <div>
             <center>
-                <h1 style="font-family: cursive; font-size: 30px; color: darkred">Resultado</h1><br><br>
-                <h1 style="font-family: cursive; font-size: 30px; color: indigo"><%
+                <h1 style="font-size: 50px;">Resultado</h1><br><br>
+                <h1 style="font-size: 50px; color: indigo"><%
                     float r = (float)request.getAttribute("ResultadoPrisma");
                     String u = (String) request.getAttribute("UnidadesPrisma");
                     out.println(r + " " + u);
                     %></h1>
+                    <a href="CalculoPrismas.jsp" class="boton" style="background-color: red">VOLVER</a>
                 
     </center>
         </div>

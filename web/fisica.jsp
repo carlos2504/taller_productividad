@@ -21,35 +21,23 @@
         <title>JSP Page</title>
     </head>
     <body class="fisica">
-
-
-    <center>
-        <h1 style="font-size: 40px">FÍSICA</h1>
-
-    </center>
-    <center>
-        <h2 style="background-color: black">Bienvenid@ al módulo de Física, haz clic en el tema que quieras ver</h2>
-    </center>
-    <div align="center">
-        <form action="ServletInicio" align="left">
-            <input type="submit" value="Inicio" class="inicio">
-        </form>
-    </div><br><br>
-
-    <div class="cajas">
-        <a href="ConversionUnidades.jsp" class="btnFisica">Conversión de unidades (Teoría)</a>
-        <a href="ConversionUnidades2.jsp" class="btnMate">Conversión de unidades (Teoría)</a>
-        <a href="LeyesdeNewton.jsp" class="btnLeyes">Leyes de Newton (Teoría)</a>
-        <a href="mfp.jsp" class="btnmfp">Masa, Fuerza y Peso (Teoría)</a>
-        <a href="caidalibre.jsp" class="btnCaida">Caída Libre (Teoría)</a>
-        
-    </div><br><br><br><br><br>
-    
-    <div align="right">
+        <h1 style="font-size: 35px; color: snow; background-color: darkcyan" align="center">FÍSICA</h1><br>
+        <div>
+            <a href="caidalibre.jsp" class="caida">Caída Libre (Teoría)</a>
+            <a href="CalculosCaida.jsp" class="caida2">Caída Libre (Práctica)</a>
+            <a href="ConversionUnidades.jsp" class="prismas">Conversión de unidades (Teoría)</a>
+            <a href="ConversionUnidades2.jsp" class="conv2">Conversión de unidades 2 (Teoría)</a>
+            <a href="ConversionCalculo.jsp" class="conv">Conversión de unidades (Práctica)</a> 
+            <a href="LeyesdeNewton.jsp" class="leyes">Leyes de Newton (Teoría)</a>
+            <a href="mfp.jsp" class="convUn">Masa, Fuerza y Peso (Teoría)</a>
+            <a href="Calculomfp.jsp" class="mfp">Masa, Fuerza y Peso (Práctica)</a>
+        </div><br><br><br>
         <form action="ServletCerrarSesion" align="right">
-            <input type="submit" value="Cerrar Sesión" class="salir">
-        </form>
-
-    </div>
-</body>
+                <input type="submit" value="Cerrar Sesión" name="Salir" size="110" class="salir" style="font-family: cursive; font-size: 30px">
+            </form>
+           <form action="ServletInicio" align="right">
+                <input type="submit" value="Inicio" name="Salir" size="110" class="regresar" style="font-family: cursive; font-size: 30px">
+            </form>
+        
+    </body>
 </html>

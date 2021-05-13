@@ -20,16 +20,18 @@
         %>
         <title>JSP Page</title>
     </head>
-    <body>
+    <body class="prismaFondo">
     <center>
         
-        <h1 style="font-family: cursive; color: purple; font-size: 40px">Peso</h1>
+        <h1 style="font-size: 40px">Peso</h1>
         
-        <h1 style="font-family: cursive; color: purple; font-size: 50px"><%
+        <h1 style="font-size: 50px"><%
         float peso = (float)request.getAttribute("pesoFinal");
         out.println("Peso = " + peso + " Kg");
         %></h1>
+        <a href="Calculomfp.jsp" class="boton" style="background-color: blue">VOLVER</a>
         
     </center>
     </body>
 </html>
+

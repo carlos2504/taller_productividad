@@ -64,6 +64,14 @@
         <servlet-name>ServletInicio</servlet-name>
         <servlet-class>servlets.ServletInicio</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>VCaida</servlet-name>
+        <servlet-class>servlets.VCaida</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CaidaOpciones</servlet-name>
+        <servlet-class>servlets.CaidaOpciones</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>verificacion</servlet-name>
         <url-pattern>/verificacion</url-pattern>
@@ -127,6 +135,14 @@
     <servlet-mapping>
         <servlet-name>ServletInicio</servlet-name>
         <url-pattern>/ServletInicio</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VCaida</servlet-name>
+        <url-pattern>/VCaida</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CaidaOpciones</servlet-name>
+        <url-pattern>/CaidaOpciones</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

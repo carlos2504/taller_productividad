@@ -20,14 +20,15 @@
         %>
         <title>JSP Page</title>
     </head>
-    <body>
-        <div style="background-color: yellow; color: black; font-family: cursive; font-size: 30px">
+    <body class="prismaFondo">
+        <div style="font-size: 30px">
             <center>
         <h1>El Resultado de la fracción es</h1><br><br>
         <h1><%
             String resultadoFraccion = (String)request.getAttribute("ResultadoFraccion");
             out.println(resultadoFraccion);
             %></h1>
+            <a href="CalculoFracciones.jsp" class="boton" style="background-color: aqua">VOLVER</a>
     </center>
         </div>
     </body>

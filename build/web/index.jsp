@@ -14,10 +14,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&family=Pangolin&display=swap" rel="stylesheet">
         <title>JSP Page</title>
     </head>
-    <body class="indexFondo">
+    <body class="fondo">
         <div>
             
-            <h1>
+            <h1 style="color: snow; font-size: 35px">
                     <center>
         
                         <h1>PhysiMath</h1>
@@ -25,13 +25,13 @@
         
                         <form action="verificacion" method="post"><br>
                     
-                            <h1>Nickname</h1><br>
+                            NICKNAME<br>
                             <input type="text" name="txtuser" size="80" required="" placeholder="Usuario"><br><br>
-                            <h1>Password</h1><br>
+                            PASSWORD<br>
                             <input type="password" name="txtpassword" size="80" required="" placeholder="Password"><br><br>
             
-                            <input type="submit" value="Entrar" name="entrar" size="110" style="color: black; " class="enviar"><br><br>
-                            No estas registrado aún? <a href="registro.jsp" class="enviar" style="color: black">Registrarme</a>
+                            <input type="submit" value="Entrar" name="entrar" size="110" style="background-color: green" class="enviar"><br><br>
+                            No estas registrado aún? <a href="registro.jsp" style="font-family: cursive; font-size: 35px" class="">Registrarme</a>
             
         </form>
         
