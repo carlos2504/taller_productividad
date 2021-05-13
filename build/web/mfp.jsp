@@ -10,6 +10,15 @@
     
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="Estilos.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&family=Pangolin&display=swap" rel="stylesheet">
+        <%
+        response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+        if(session.getAttribute("usuario") == null){
+            response.sendRedirect("index.jsp");
+        }
+        %>
         <title>JSP Page</title>
     </head>
     <body>
@@ -61,9 +70,9 @@
         <form action="Servletmfp" method="get" style="font-family: cursive; color: navy; font-size: 20px">
             
         Gravedad<br><br>
-        <input type="text" name="gravedad"><br><br>
+        <input type="text" name="gravedad" required=""><br><br>
         Masa (Kg)<br><br>
-        <input type="text" name="masa"><br><br>
+        <input type="text" name="masa" required=""><br><br>
         <input type="submit" value="Calcular" style="font-family: cursive; color: navy; font-size: 20px">
         </form>
         
@@ -110,9 +119,9 @@
         <form action="ServletMasa" method="get" style="font-family: cursive; color: green; font-size: 20px">
             
         Fuerza (N)<br><br>
-        <input type="text" name="fuerza"><br><br>
+        <input type="text" name="fuerza" required=""><br><br>
         Aceleración<br><br>
-        <input type="text" name="aceleracion"><br><br>
+        <input type="text" name="aceleracion" required=""><br><br>
         <input type="submit" value="Calcular" style="font-family: cursive; color: green; font-size: 20px">
         </form>
         <p align="right" style="color: purple; font-family: cursive; font-size: 20px">
@@ -155,9 +164,9 @@
         <h1 style="font-family: cursive; color: purple">Puedes introducir tus propias medidas en el formulario para comprobar tus resultados</h1>
         <form action="ServletPeso" method="get" style="font-family: cursive; color: purple; font-size: 20px">
         Gravedad<br><br>
-        <input type="text" name="gravedad"><br><br>
+        <input type="text" name="gravedad" required=""><br><br>
         Masa (Kg)<br><br>
-        <input type="text" name="masa"><br><br>
+        <input type="text" name="masa" required=""><br><br>
         <input type="submit" value="Calcular" style="font-family: cursive; color: purple; font-size: 20px">
         </form>
         

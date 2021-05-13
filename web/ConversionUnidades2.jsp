@@ -9,6 +9,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="Estilos.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&family=Pangolin&display=swap" rel="stylesheet">
+        <%
+        response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+        if(session.getAttribute("usuario") == null){
+            response.sendRedirect("index.jsp");
+        }
+        %>
         <title>JSP Page</title>
     </head>
     <body>
@@ -52,7 +61,7 @@
             <form action="ConversionCalculo" method="get" style="font-family: cursive; font-size: 25px ">
                 <h1>Puedes utilizar el formulario para convertir unidades</h1><br><br>
                 <center>Valor en unidades base<br><br>
-                <input type="text" name="unidadesbase" size="50"><br><br>
+                    <input type="text" name="unidadesbase" size="50" required=""><br><br>
                 </center>
                 <h1>Selecciona la conversión que quieres hacer</h1><br><br>
                 <select name="conversion" size="1" style="font-family: cursive; font-size: 30px; color: midnightblue">
@@ -142,7 +151,7 @@
             <form action="ConversionCalculo" method="get" style="font-family: cursive; font-size: 25px ">
                 <h1>Puedes utilizar el formulario para convertir unidades</h1><br><br>
                 <center>Valor en unidades base<br><br>
-                <input type="text" name="unidadesbase" size="50"><br><br>
+                    <input type="text" name="unidadesbase" size="50" required=""><br><br>
                 </center>
                 <h1>Selecciona la conversión que quieres hacer</h1><br><br>
                 <select name="conversion" size="1" style="font-family: cursive; font-size: 30px; color: midnightblue">

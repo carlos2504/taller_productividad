@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : Lenovo
 */
 .enviar{
-    font-size: 25px;
+    font-size: 30px;
     list-style: none;
     display: inline-block;
     padding: 10px;
@@ -24,7 +24,205 @@ and open the template in the editor.
 .enviar:hover{
     transition: all .5s;
     box-shadow: 0px 0px 10px 6px green;
-    background: rgba(0, 0, 0, 0.9);
+    background: green;
+    transform: translate(0px, -5px);
+}
+.inicio{
+    font-size: 30px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    border-style: solid;
+    margin-right: 30px;
+    border-radius: 30px;
+    background: steelblue;
+    box-shadow: 0px 0px 10px 4px steelblue;
+    transition: all .5s;
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+}
+.inicio:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px 6px green;
+    background: green;
+    transform: translate(0px, -5px);
+}
+.inicioFondo{
+    background-image: url('skull-and-crossbones-1739995_1280.jpg');
+}
+.inicioFondo div{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 25px;
+}
+.inicioFondo h1{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 30px;
+}
+.inicioFondo h2{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 25px;
+}
+.inicioFondo p{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 25px;
+}
+.btnFisica{
+    font-size: 35px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    border-style: solid;
+    margin-right: 30px;
+    border-radius: 30px;
+    background: steelblue;
+    box-shadow: 0px 0px 10px 4px green;
+    transition: all .5s;
+    text-decoration: none;
+    color: black;
+    font-family: 'Indie Flower', cursive;
+}
+.btnFisica:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px 6px green;
+    background: green;
+    transform: translate(0px, -5px);
+}
+.fisica{
+    background-image: url('physicist-4276720_1920.jpg');
+}
+.fisica h1{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 30px;
+}
+.fisica h2{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 25px;
+}
+.fisica div{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 25px;
+}
+.fisica p{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 25px;
+}
+.fisica form{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 30px;
+}
+.btnMate{
+    font-size: 35px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    border-style: solid;
+    margin-right: 30px;
+    border-radius: 30px;
+    background: orange;
+    box-shadow: 0px 0px 10px 4px green;
+    transition: all .5s;
+    text-decoration: none;
+    color: black;
+    font-family: 'Indie Flower', cursive;
+}
+.btnMate:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px 6px green;
+    background: green;
+    transform: translate(0px, -5px);
+}
+.btnLeyes{
+    font-size: 35px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    border-style: solid;
+    margin-right: 30px;
+    border-radius: 30px;
+    background: purple;
+    box-shadow: 0px 0px 10px 4px purple;
+    transition: all .5s;
+    text-decoration: none;
+    color: black;
+    font-family: 'Indie Flower', cursive; 
+}
+.btnLeyes:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px 6px green;
+    background: green;
+    transform: translate(0px, -5px);
+}
+.btnmfp{
+    font-size: 35px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    border-style: solid;
+    margin-right: 30px;
+    border-radius: 30px;
+    background: red;
+    box-shadow: 0px 0px 10px 4px red;
+    transition: all .5s;
+    text-decoration: none;
+    color: black;
+    font-family: 'Indie Flower', cursive; 
+}
+.btnmfp:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px 6px green;
+    background: green;
+    transform: translate(0px, -5px);
+}
+.btnCaida{
+    font-size: 35px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    border-style: solid;
+    margin-right: 30px;
+    border-radius: 30px;
+    background: forestgreen;
+    box-shadow: 0px 0px 10px 4px forestgreen;
+    transition: all .5s;
+    text-decoration: none;
+    color:black;
+    font-family: 'Indie Flower', cursive; 
+}
+.btnCaida:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px 6px green;
+    background: green;
+    transform: translate(0px, -5px);
+}
+.salir{
+    font-size: 35px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    border-style: solid;
+    margin-right: 30px;
+    border-radius: 30px;
+    background: red;
+    box-shadow: 0px 0px 10px 4px red;
+    transition: all .5s;
+    text-decoration: none;
+    color: black;
+    font-family: 'Indie Flower', cursive;
+    
+}
+.salir:hover{
+    transition: all .5s;
+    box-shadow: 0px 0px 10px 6px red;
+    background: red;
     transform: translate(0px, -5px);
 }
 .indexFondo{
@@ -34,7 +232,7 @@ and open the template in the editor.
     font-family: 'Indie Flower', cursive;
     color: snow;
     font-size: 25px;
-    
+
 }
 .indexFondo p{
     font-family: 'Indie Flower', cursive;
@@ -43,7 +241,7 @@ and open the template in the editor.
 }
 .indexFondo h1{
     font-family: 'Indie Flower', cursive;
-    font-size: 35px;
+    font-size: 30px;
     color: snow;
 }
 .indexFondo h2{
@@ -57,7 +255,7 @@ and open the template in the editor.
 .registroFondo h1{
     font-family: 'Indie Flower', cursive;
     color: snow;
-    font-size: 25px;
+    font-size: 30px;
 }
 .registroFondo h2{
     font-family: 'Indie Flower', cursive;
@@ -92,4 +290,50 @@ input[type=password]{
     font-family: 'Indie Flower', cursive;
     color: indigo;
     border-radius: 30px;
+}
+.contenedor{
+    border: solid 1px black;
+    margin: 10px;
+}
+.cajas{
+    border: solid 1px black;
+    margin: 15px;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+.caja{
+    background-color: red;
+    margin: calc(25% - 50px);
+    height: 100px;
+    width: 100px;
+    font-family: 'Indie Flower', cursive;;
+    font-size: 30px;
+}
+.matematicas{
+    background-image: url('banner-1183445_1280.jpg');
+}
+.matematicas div{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 25px;
+}
+.matematicas h1{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 30px;
+}
+.matematicas h2{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 25px;
+}
+.matematicas p{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 25px;
+}
+.matematicas form{
+    font-family: 'Indie Flower', cursive;
+    color: snow;
+    font-size: 25px;
 }
